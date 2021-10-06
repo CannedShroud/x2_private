@@ -17,4 +17,13 @@
 <resources>
   <!-- Whether to check that the proximity is unblocked before showing the incoming call UI. -->
   <bool name="config_answer_proximity_sensor_enabled">false</bool>
+
+    <!-- Color of the UDFPS pressed view -->
+    <color name="config_udfpsColor">#00ffffff</color>
+
+    <!-- HBM type of UDFPS overlay.
+            0 - GLOBAL HBM 
+            1 - LOCAL HBM
+    -->
+    <integer name="config_udfps_hbm_type">0</integer>
 </resources>
