@@ -81,20 +81,10 @@ PRODUCT_PACKAGES += \
     libvulkan
 
 # Doze
-PRODUCT_PACKAGES += \
+# PRODUCT_PACKAGES += \
     devicesettings \
     RealmeProximityHelper \
     RealmeDoze
-
-# Fingerprint
-PRODUCT_PACKAGES += \
-    android.hardware.biometrics.fingerprint@2.1-service.x2 \
-    lineage.biometrics.fingerprint.inscreen@1.0-service.x2 \
-    vendor.oppo.hardware.biometrics.fingerprint@2.1
-
-# Fingerprint
-PRODUCT_COPY_FILES += \
-    frameworks/native/data/etc/android.hardware.fingerprint.xml:system/etc/permissions/android.hardware.fingerprint.xml
 
 # HIDL
 PRODUCT_PACKAGES += \
@@ -135,14 +125,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/media_profiles_vendor.xml:system/etc/media_profiles_vendor.xml
 
-# NFC
-PRODUCT_PACKAGES += \
-    com.android.nfc_extras \
-    com.gsma.services.nfc \
-    NfcNci \
-    SecureElement \
-    Tag
-
 # Net
 PRODUCT_PACKAGES += \
     netutils-wrapper-1.0
@@ -179,7 +161,6 @@ PRODUCT_BOARD_PLATFORM := sm6150
 PRODUCT_USES_QCOM_HARDWARE := true
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH) \
-    vendor/nxp/opensource/sn100x
 
 # Telephony
 PRODUCT_PACKAGES += \
