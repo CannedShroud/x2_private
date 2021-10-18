@@ -15,6 +15,7 @@
  */
 #define LOG_TAG "android.hardware.biometrics.fingerprint@2.3-service.x2"
 #define CUSTOM_TAG "X2UDFPS"
+#define DEBUG_ADAPTOR 1
 #include "BiometricsFingerprint.h"
 
 #include <android-base/logging.h>
